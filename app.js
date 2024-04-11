@@ -1,10 +1,12 @@
 function clicar(){
     // Entrada
-    var numero1 = document.getElementById('numero1').value
-    var numero2 = document.getElementById('numero2').value
+    var n1 = parseFloat(document.getElementById('numero1').value)
+    var n2 = parseFloat(document.getElementById('numero2').value)
+    var resultado = document.getElementById('resultado')
+
+    var soma = n1 + n2
 
     // saida
-    console.log(numero1)
-    console.log(numero2)
+   resultado.innerText =`O Resultado é ${soma}` 
 
 }
